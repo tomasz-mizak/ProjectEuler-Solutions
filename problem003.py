@@ -2,21 +2,14 @@
 
 # What is the largest prime factor of the number 600851475143 ?
 
-p = []
+import prime_numbers
 
-i = 2
-s = 50
+scope = 100000 # specify scope for primals
+primes = prime_numbers.get_prime_numbers(scope)
 
-while (i <= s):
-    p.append(i)
-    i+=1
+n = 600851475143
 
-def ero(p, i):
-    _p = []
-    for n in p:
-        if (n % i != 0):
-            _p.append(n)
-    return _p
-
-ero(p,p[0])
-print(p)
+print("loaded primes: ", len(primes))
+for d in primes:
+    if (n % d == 0):
+        print("found factor: ", d) # last factor is answer
