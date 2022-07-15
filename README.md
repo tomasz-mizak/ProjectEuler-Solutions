@@ -2,6 +2,4 @@
 
 https://projecteuler.net/about
 
-Głupkowate rozwiązania, celem praktyki obsługi języka python
-
-:)
+Silly solutions, the goal of python language support practice :)
